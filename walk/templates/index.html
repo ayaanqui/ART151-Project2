@@ -7,11 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Walk</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 </head>
 
 <body>
-    <h3>{{ context['title'] }}</h3>
-    <p>{{ context['content'] }}</p>
+    <div class="container mt-5 mb-5">
+        <h3>{{ context['title'] }}</h3>
+        <p>{{ context['content'] }}</p>
+    </div>
 </body>
 
 </html>
